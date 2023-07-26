@@ -15,14 +15,17 @@ public class App {
         // Cat -- Referenztyp
         // cat -- Referenzvariable
         Cat cat = new Cat();
-        System.out.println("Blick von aussen: " + cat);
-        cat.tellYourAddress();
+        // System.out.println("Blick von aussen: " + cat);
+        // cat.tellYourAddress();
 
-        System.out.println("-------------------------");
+        cat.testObj();
+        Cat.testClasse();
 
-        Cat cat2 = new Cat();
-        System.out.println("Blick von aussen: " + cat2);
-        cat2.tellYourAddress();
+        System.out.println("---------------------");
+
+        // Cat cat2 = new Cat();
+        // System.out.println("Blick von aussen: " + cat2);
+        // cat2.tellYourAddress();
 
     }
 

@@ -10,4 +10,12 @@ public class Cat {
     
    }
     
+
+public void testObj() {
+    System.out.println("Grüße aus dem Objekt: " + this);
+}
+
+public static void testClasse() {
+    System.out.println("Grüße aus der Klasse!");
+}
 }
