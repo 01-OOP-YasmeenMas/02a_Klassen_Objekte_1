@@ -6,8 +6,23 @@ public class App {
 
 
         //Erzeugen von Objekten ohne Referenz
-        System.out.println(new Cat());
-        System.out.println(new Cat());
+        // System.out.println(new Cat());
+        // System.out.println(new Cat());
+
+        /*------------------------------- */
+
+        /* Instanziierung Klasse --> Objekt */
+        // Cat -- Referenztyp
+        // cat -- Referenzvariable
+        Cat cat = new Cat();
+        System.out.println("Blick von aussen: " + cat);
+        cat.tellYourAddress();
+
+        System.out.println("-------------------------");
+
+        Cat cat2 = new Cat();
+        System.out.println("Blick von aussen: " + cat2);
+        cat2.tellYourAddress();
 
     }
 
