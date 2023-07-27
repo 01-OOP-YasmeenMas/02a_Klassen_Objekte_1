@@ -14,21 +14,39 @@ public class App {
         /* Instanziierung Klasse --> Objekt */
         // Cat -- Referenztyp
         // cat -- Referenzvariable
-        Cat cat = new Cat();
-        output("Blick von aussen: " + cat);
-        output(cat.tellYourAddress());
 
-        // cat.testObj();
-        // Cat.testClasse();
+        Cat cat1 = new Cat();
+       
+        //wertzuweisung
+        cat1.firstName = "Grizabella";
+        cat1.furColor = "white";
+        cat1.age = 29;
 
+
+        //Ausgabe
+         output(cat1.tellYourName());
+         output(cat1.furColor);
+
+         //.. was nicht passt, wird passend gemacht .. ;-)
+         //.. Typkonvertierung
+
+         output(Integer.toString(cat1.age));
+         output(String.valueOf(cat1.age));
     
         output("---------------------");
 
         Cat cat2 = new Cat();
-        output("Blick von aussen: " + cat2);
-        cat2.tellYourAddress();
-        output(cat2.tellYourAddress());
 
+        cat2.firstName = "Alonzo";
+        cat2.furColor = "grey";
+        cat2.age = 35;
+
+         output(cat2.tellYourName());
+         output(cat2.furColor);
+          output(Integer.toString(cat2.age));
+         output(String.valueOf(cat2.age));
+    
+       
     }
 
     public static void output(String outputData) {
