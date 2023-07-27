@@ -20,7 +20,11 @@ public class Cat {
     }
 
     public String getFirstName() {
-        return firstName;
+     if (getPermission()) {
+                return firstName;
+     } else {
+        return "sorry, no permission!";
+     }
     }
 
     public void setFirstName(String firstName) {
@@ -44,5 +48,8 @@ public class Cat {
     }
 
     
+    private boolean getPermission() {
+        return true;
+    }
 
 }

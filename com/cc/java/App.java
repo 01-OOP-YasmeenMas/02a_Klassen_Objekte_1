@@ -25,6 +25,9 @@ public class App {
 
          output(Integer.toString(cat1.getAge()));
          output(String.valueOf(cat1.getAge()));
+
+         cat1.setFurColor("grey");
+         output(cat1.getFurColor());
     
         output("---------------------");
         
