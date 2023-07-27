@@ -2,24 +2,29 @@ package com.cc.java;
 
 public class Cat {
 
-//    public void tellYourAddress() {
-
-//     // this --> Instanzvariable
-
-//     System.out.println("Blick von innen: " + this);
+    /*
+    *  Felder (fields)
+    * Attribute ( attributes)
+    * Eigenschaften (properties)
+    * 
+    */
     
-//    }
-   
+    public String  firstName;
+    public String  furColor;
+    int age;
 
-public String tellYourAddress() {
-    return "Blick von innen: " + this;
-}
+    public Cat(String firstName, String furColor, int age) {
+        this.firstName = firstName;
+        this.furColor = furColor;
+        this.age = age;
+    }
 
-// public void testObj() {
-//     System.out.println("Grüße aus dem Objekt: " + this);
-// }
+    public String  tellYourName() {
+        return this.firstName;
+    }
 
-// public static void testClasse() {
-//     System.out.println("Grüße aus der Klasse!");
-// }
+    public void changeName(String firstName) {
+        this.firstName = firstName;
+    }
+
 }

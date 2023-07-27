@@ -11,17 +11,10 @@ public class App {
 
         /*------------------------------- */
 
-        /* Instanziierung Klasse --> Objekt */
-        // Cat -- Referenztyp
-        // cat -- Referenzvariable
-
-        Cat cat1 = new Cat();
        
-        //wertzuweisung
-        cat1.firstName = "Grizabella";
-        cat1.furColor = "white";
-        cat1.age = 29;
 
+        // Instanziierung mit custom constructor
+        Cat cat1 = new Cat("Grizabella","white", 29);
 
         //Ausgabe
          output(cat1.tellYourName());
@@ -34,18 +27,13 @@ public class App {
          output(String.valueOf(cat1.age));
     
         output("---------------------");
-
-        Cat cat2 = new Cat();
-
-        cat2.firstName = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
+        
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
 
          output(cat2.tellYourName());
          output(cat2.furColor);
-          output(Integer.toString(cat2.age));
-         output(String.valueOf(cat2.age));
-    
+         output(Integer.toString(cat2.age));
+         
        
     }
 
