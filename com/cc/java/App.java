@@ -16,23 +16,24 @@ public class App {
         // Instanziierung mit custom constructor
         Cat cat1 = new Cat("Grizabella","white", 29);
 
-        //Ausgabe
-         output(cat1.tellYourName());
-         output(cat1.furColor);
+        //Ausgabe über Getter
+         output(cat1.getFirstName());
+         output(cat1.getFurColor());
 
          //.. was nicht passt, wird passend gemacht .. ;-)
          //.. Typkonvertierung
 
-         output(Integer.toString(cat1.age));
-         output(String.valueOf(cat1.age));
+         output(Integer.toString(cat1.getAge()));
+         output(String.valueOf(cat1.getAge()));
     
         output("---------------------");
         
         Cat cat2 = new Cat("Alonzo", "grey", 35);
 
-         output(cat2.tellYourName());
-         output(cat2.furColor);
-         output(Integer.toString(cat2.age));
+        //Ausgabe über Getter
+         output(cat2.getFirstName());
+         output(cat2.getFurColor());
+         output(Integer.toString(cat2.getAge()));
          
        
     }
